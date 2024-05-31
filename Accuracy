@@ -1,0 +1,2 @@
+accuracy = classifier.score(X_test_scaled, y_test)
+print("Accuracy:", accuracy)
