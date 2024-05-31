@@ -1,0 +1,11 @@
+import os
+
+# audio_dir = '/content/angry/'
+# audio_files = glob(os.path.join(audio_dir, '*.wav'))
+sample_audio_path = "/content/sample.mp3"
+signal, sr = librosa.load(sample_audio_path, sr=None)
+mfccs = librosa.feature.mfcc(y=signal, sr=sr, n_mfcc=20)
+features = np.mean(mfccs, axis=1)
+features_scaled = scaler.transform(features.reshape(1, -1))
+prediction = classifier.predict(features_scaled)
+print("Predicted emotion:", prediction)
