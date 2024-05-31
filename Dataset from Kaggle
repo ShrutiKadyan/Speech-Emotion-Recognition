@@ -1,0 +1,5 @@
+!mkdir ~/.kaggle
+!cp /content/drive/MyDrive/SERMinor/kaggle.json ~/.kaggle/kaggle.json
+!chmod 600 ~/.kaggle/kaggle.json
+!kaggle datasets download -d omagarwal2411/nor-smart-speech
+!unzip nor-smart-speech.zip
