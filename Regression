@@ -1,0 +1,2 @@
+classifier = LogisticRegression()
+classifier.fit(X_train_scaled, y_train)
